@@ -1,6 +1,6 @@
 from collections import deque
 import sys
-sys.stdin = open('test.txt')
+#sys.stdin = open('test.txt')
 input = sys.stdin.readline
 # 1년씩 증가시키면서 상하좌우 보고 값 변화시키기
 # 값 변화시킨 그래프 가지고 bfs하면서 덩어리 세기
@@ -60,7 +60,7 @@ def find_chunk(map):
                 bfs(i, j, visited)
                 chunk += 1
 
-    return chunk
+    return chunk, visited
 
 
 N, M = map(int, input().split())
@@ -72,15 +72,18 @@ while True:
     # 만약 빙산이 하나도 없다면
     new = year_pass(map)
     if new == -1:
+        result = 0
         break
 
-    if find_chunk(new) > 1:
+    chunk, visited = find_chunk(new)
+    if chunk > 1:
+        result = year
         break
 
     year += 1
     map = new
 
-print(year)
+print(result)
 
 
 # 반례
