@@ -1,33 +1,86 @@
 import sys
-sys.stdin = open('test.txt')
-input = sys.stdin.readline
 
-r, c = map(int, input().split())
-maps = []
-for _ in range(r):
-    maps.append(list(input()))
-ans = 0
-alphas = set()
-dx = [-1, 1, 0, 0]
-dy = [0, 0, -1, 1]
+sys.stdin = open('1.txt')
+sys.setrecursionlimit(10000000)
+from collections import deque
 
-def dfs(x, y, count):
-    global ans
-    ans = max(ans, count)
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-        if 0 <= nx < r and 0 <= ny < c: 
-            if maps[nx][ny] not in alphas:
-                alphas.add(maps[nx][ny])
-                dfs(nx, ny, count+1)
-                alphas.remove(maps[nx][ny])
+def bfs(x, y, passed, cnt):
+    global maxv
+    q = deque([(x, y, passed, cnt)])
+    maxv = 0
+    while q:
+        x, y, passed, cnt = q.popleft()
+        for dx, dy in [(1, 0), (0,1), (-1,0),(0,-1)]:
+            nx, ny = dx + x, dy + y
+            if 0<=nx<N and 0<=ny<M:
+                if arr[nx][ny] not in passed:
+                    passed.add(arr[nx][ny])
+                    q.append((nx, ny, passed, cnt + 1))
+                    maxv = max(maxv, cnt)
 
-alphas.add(maps[0][0])
-dfs(0, 0, 1)
-print(ans)
 
-# 노드(ny, nx) 가 if 분기문에 해당된다는 의미는, 
-# 새롭게 노드를 뻗어나갈 수 있다는 뜻이기에 
-# count 의 값을 + 1 하여 재귀호출
-# dfs() 함수가 종료되면 해당 노드(ny, nx) 를 set 에서 빼줘야한다. 
+N, M = map(int, input().split())
+arr = [list(input()) for _ in range(N)]
+bfs(0,0, set(arr[0][0]), 1)
+print(maxv)
+
+'''
+8 9
+QDTCYRNEF
+MFKGIJAXZ
+XAGVNZYGR
+PPYUUPFKG
+JEQVKFEWU
+HCBRUZQPJ
+YOVJVILYU
+INXATSXKE
+
+답 : 24
+
+20 20
+ABCDEFGHIJKLMNOPQRST
+UVWXYZABCDEFGHIJKLMN
+OPQRSTUVWXYZABCDEFGH
+IJKLMNOPQRSTUVWXYZAB
+CDEFGHIJKLMNOPQRSTUV
+WXYZABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNOPQRST
+UVWXYZABCDEFGHIJKLMN
+OPQRSTUVWXYZABCDEFGH
+IJKLMNOPQRSTUVWXYZAB
+CDEFGHIJKLMNOPQRSTUV
+WXYZABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNOPQRST
+UVWXYZABCDEFGHIJKLMN
+OPQRSTUVWXYZABCDEFGH
+IJKLMNOPQRSTUVWXYZAB
+CDEFGHIJKLMNOPQRSTUV
+WXYZABCDEFGHIJKLMNOP
+ABCDEFGHIJKLMNOPQRST
+WXYZABCDEFGHIJKLMNOP
+
+
+
+20 20
+ABCDEFGHIJKLMNOPQRST
+BCDEFGHIJKLMNOPQRSTU
+CDEFGHIJKLMNOPQRSTUV
+DEFGHIJKLMNOPQRSTUVW
+EFGHIJKLMNOPQRSTUVWX
+FGHIJKLMNOPQRSTUVWXY
+GHIJKLMNOPQRSTUVWXYZ
+HIJKLMNOPQRSTUVWXYZZ
+IJKLMNOPQRSTUVWXYZZZ
+JKLMNOPQRSTUVWXYZZZZ
+KLMNOPQRSTUVWXYZZZZZ
+LMNOPQRSTUVWXYZZZZZZ
+MNOPQRSTUVWXYZZZZZZZ
+NOPQRSTUVWXYZZZZZZZZ
+OPQRSTUVWXYZZZZZZZZZ
+PQRSTUVWXYZZZZZZZZZZ
+QRSTUVWXYZZZZZZZZZZZ
+RSTUVWXYZZZZZZZZZZZZ
+STUVWXYZZZZZZZZZZZZZ
+TUVWXYZZZZZZZZZZZZZZ
+
+'''
