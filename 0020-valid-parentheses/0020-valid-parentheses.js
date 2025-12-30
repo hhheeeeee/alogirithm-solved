@@ -3,15 +3,25 @@
  * @return {boolean}
  */
 var isValid = function (s) {
-  let stack = [];
-  let dict = { "(": ")", "{": "}", "[": "]" };
-  for (let char of [...s]) {
-    if (Object.keys(dict).includes(char)) {
-      stack.push(char);
-    } else if (char === dict[stack[stack.length - 1]] && stack.length > 0) {
-      stack.pop();
-    } else {
-        return false
+  const stack = [];
+
+  for (let i = 0; i < s.length; i++) {
+    let c = s.charAt(i);
+    console.log(c);
+    switch (c) {
+      case "(":
+        stack.push(")");
+        break;
+      case "[":
+        stack.push("]");
+        break;
+      case "{":
+        stack.push("}");
+        break;
+      default:
+        if (c !== stack.pop()) {
+          return false;
+        }
     }
   }
   return stack.length === 0;
