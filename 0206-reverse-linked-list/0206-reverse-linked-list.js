@@ -9,14 +9,11 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-var reverseList = function(head) { 
-   let cur = head
-   let prevNode = null
-   while (cur != null) {
-      let next = cur.next 
-      cur.next= prevNode
-      prevNode = cur 
-      cur = next 
-   }
-   return prevNode
+var reverseList = function(head) {
+    if (head == null || head.next == null) return head;
+
+    var res = reverseList(head.next);
+    head.next.next = head;
+    head.next = null;
+    return res;     // Return the reverse linked list
 };
