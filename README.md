@@ -17,4 +17,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0208-implement-trie-prefix-tree) |
+## Array
+|  |
+| ------- |
+| [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
 <!---LeetCode Topics End-->
