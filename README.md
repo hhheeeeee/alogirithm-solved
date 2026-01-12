@@ -20,10 +20,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
 ## Dynamic Programming
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0062-unique-paths](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0062-unique-paths) |
 | [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
 ## Math
@@ -34,4 +36,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0062-unique-paths) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
