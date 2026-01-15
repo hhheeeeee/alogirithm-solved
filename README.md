@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0208-implement-trie-prefix-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0208-implement-trie-prefix-tree) |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 ## String
 |  |
 | ------- |
@@ -23,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0057-insert-interval) |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 | [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
 ## Dynamic Programming
 |  |
@@ -34,6 +36,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0062-unique-paths](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0062-unique-paths) |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 ## Combinatorics
 |  |
 | ------- |
@@ -46,4 +49,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0056-merge-intervals](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0056-merge-intervals) |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
+## Binary Search
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 <!---LeetCode Topics End-->
