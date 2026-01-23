@@ -13,22 +13,19 @@
 var goodNodes = function(root) {
     let good = 0
 
-    const recursive = (node, passed) => {
+    const recursive = (node, max) => {
         if (!node || node.val == null) return;
 
-        let goodFlag = true
-        for (i = 0; i < passed.length; i++){
-            if (passed[i] > node.val) {
-                goodFlag = false
-                break
-            }
-        }
-        if (goodFlag){
+        if (node.val >= max) {
             good += 1
+            recursive(node.left, node.val)
+            recursive(node.right, node.val)
+        } else {
+            recursive(node.left, max)
+            recursive(node.right, max)
         }
-        recursive(node.left, [...passed, node.val])
-        recursive(node.right, [...passed, node.val])
+        
     }
-    recursive(root, [])
+    recursive(root, -Infinity)
     return good
 };
