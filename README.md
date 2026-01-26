@@ -26,6 +26,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0057-insert-interval) |
+| [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 | [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 | [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
 ## Dynamic Programming
@@ -68,10 +69,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Breadth-First Search
 |  |
 | ------- |
+| [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/1448-count-good-nodes-in-binary-tree) |
 ## Binary Tree
 |  |
@@ -85,4 +88,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
+## Matrix
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
