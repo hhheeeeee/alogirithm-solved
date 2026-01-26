@@ -2,9 +2,9 @@
  * @param {number} capacity
  */
 var LRUCache = function (capacity) {
-    // 가장 오래된걸 0번째 index에
     this.cache = new Map()
     this.capacity = capacity
+
 };
 
 /** 
@@ -12,12 +12,13 @@ var LRUCache = function (capacity) {
  * @return {number}
  */
 LRUCache.prototype.get = function (key) {
-    if (!this.cache.has(key)) return -1;
-
-    const v = this.cache.get(key);
-    this.cache.delete(key);
-    this.cache.set(key, v);
-    return this.cache.get(key);
+    if (this.cache.has(key)) {
+        let value = this.cache.get(key)
+        this.cache.delete(key)
+        this.cache.set(key, value)
+        return value
+    }
+    return -1
 };
 
 /** 
@@ -26,14 +27,14 @@ LRUCache.prototype.get = function (key) {
  * @return {void}
  */
 LRUCache.prototype.put = function (key, value) {
-     if (this.cache.has(key)) {
-      this.cache.delete(key);
+    if (this.cache.has(key)) {
+        this.cache.delete(key)
+    } else if (this.cache.size === this.capacity) {
+        let oldestKey = this.cache.keys().next().value
+        this.cache.delete(oldestKey)
+
     }
-    
-    this.cache.set(key, value);
-    if (this.cache.size > this.capacity) {
-      this.cache.delete(this.cache.keys().next().value); 
-    }
+    this.cache.set(key, value)
 };
 
 /** 
