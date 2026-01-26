@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0208-implement-trie-prefix-tree) |
 | [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 ## String
@@ -13,6 +14,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Design
 |  |
 | ------- |
+| [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0208-implement-trie-prefix-tree) |
 ## Trie
 |  |
@@ -75,4 +77,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1448-count-good-nodes-in-binary-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/1448-count-good-nodes-in-binary-tree) |
+## Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
+## Doubly-Linked List
+|  |
+| ------- |
+| [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
 <!---LeetCode Topics End-->
