@@ -7,12 +7,12 @@ var numIslands = function (grid) {
     let [m, n] = [grid.length, grid[0].length]
 
     const dfs = (x, y) => {
-        grid[x][y] = 2
+        grid[x][y] = "2"
         let dir = [[1, 0], [-1, 0], [0, 1], [0, -1]]
 
         for (let [dx, dy] of dir) {
             let [nx, ny] = [x + dx, y + dy]
-            if (0 <= nx && nx < m && 0 <= ny && ny < n && grid[nx][ny] == 1) {
+            if (0 <= nx && nx < m && 0 <= ny && ny < n && grid[nx][ny] == "1") {
                 dfs(nx, ny)
             }
         }
@@ -20,7 +20,7 @@ var numIslands = function (grid) {
 
     for (let i = 0; i < m; i++) {
         for (let j = 0; j < n; j++) {
-            if (grid[i][j] == 1) {
+            if (grid[i][j] == "1") {
                 dfs(i, j)
                 islands += 1
             }
