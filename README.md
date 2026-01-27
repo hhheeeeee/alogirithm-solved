@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0128-longest-consecutive-sequence) |
 | [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
 | [0208-implement-trie-prefix-tree](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0208-implement-trie-prefix-tree) |
 | [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
@@ -26,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0056-merge-intervals) |
 | [0057-insert-interval](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0057-insert-interval) |
+| [0128-longest-consecutive-sequence](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 | [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
 | [0746-min-cost-climbing-stairs](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0746-min-cost-climbing-stairs) |
@@ -91,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Union-Find
 |  |
 | ------- |
+| [0128-longest-consecutive-sequence](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0128-longest-consecutive-sequence) |
 | [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 ## Matrix
 |  |
