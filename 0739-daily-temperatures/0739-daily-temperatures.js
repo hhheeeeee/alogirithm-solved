@@ -2,26 +2,24 @@
  * @param {number[]} temperatures
  * @return {number[]}
  */
-var dailyTemperatures = function(temperatures) {
-    let stack = []
-    let idx = []
-    let res = new Array(temperatures.length).fill(0)
-
-    for (let i = temperatures.length - 1; i >= 0; i--) {
-        let cur = temperatures[i]
-        while (cur >= stack[stack.length - 1]) {
-            stack.pop()
-            idx.pop()
+var dailyTemperatures = function (temperatures) {
+    let tmpStack = []
+    let idxStack = []
+    let result = []
+    for (let i = temperatures.length - 1; 0 <= i; i--) {
+        let now = temperatures[i]
+        // 감소 순열이 될 때까지 pop해
+        while (tmpStack[tmpStack.length - 1] <= now) {
+            tmpStack.pop()
+            idxStack.pop()
         }
-
-        if (stack.length === 0) {
-            res[i] = 0
+        if (tmpStack.length === 0) {
+            result.unshift(0)
         } else {
-            res[i] = idx[idx.length - 1] - i
+            result.unshift(idxStack[idxStack.length - 1] - i)
         }
-
-        stack.push(cur)
-        idx.push(i)
+        tmpStack.push(now)
+        idxStack.push(i)
     }
-    return res
+    return result
 };
