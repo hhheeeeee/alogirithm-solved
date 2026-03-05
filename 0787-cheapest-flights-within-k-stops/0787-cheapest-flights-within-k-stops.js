@@ -7,42 +7,19 @@
  * @return {number}
  */
 var findCheapestPrice = function (n, flights, src, dst, k) {
-    let graph = Array.from({ length: n }, () => [])
+    let INF = Infinity
+    let dist = Array(n).fill(INF);
+    dist[src] = 0;
 
-    for (let [from, to, cost] of flights) {
-        graph[from].push([to, cost])
+    for (let i = 0; i <= k; i++) { // 총 k+1번 완화
+        const next = dist.slice();
+        for (const [u, v, w] of flights) {
+            if (dist[u] === INF) continue;
+            const cand = dist[u] + w;
+            if (cand < next[v]) next[v] = cand;
+        }
+        dist = next;
     }
 
-    let best = Array.from({ length: n + 1 }, () => Array(n).fill(Infinity));
-    best[0][src] = 0;
-
-    let min = Infinity
-    let queue = [[src, 0, 0]]
-    while (queue.length > 0) {
-        let [now, nowTotal, nowStop] = queue.pop()
-
-        if (now == dst && nowStop <= k + 1) {
-            min = Math.min(min, nowTotal)
-            continue
-        }
-
-        if (nowTotal !== best[nowStop][now]) continue;
-        if (nowTotal > min) continue;
-        if (nowStop > k) continue;
-
-        for (const [next, cost] of graph[now]) {
-            const nextTotal = nowTotal + cost;
-            const nextStop = nowStop + 1;
-
-            if (nextTotal >= min) continue;
-
-            if (nextTotal < best[nextStop][next]) {
-                best[nextStop][next] = nextTotal;
-                queue.push([next, nextTotal, nextStop]);
-            }
-        }
-
-    }
-
-    return min === Infinity ? -1 : min
+    return dist[dst] >= INF ? -1 : dist[dst];
 };
