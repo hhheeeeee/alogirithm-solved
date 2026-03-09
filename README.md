@@ -33,6 +33,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0057-insert-interval](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0057-insert-interval) |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0128-longest-consecutive-sequence) |
+| [0134-gas-station](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0134-gas-station/) | Medium |
 | [0198-house-robber](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0198-house-robber) |
 | [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 | [0268-missing-number](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0268-missing-number) |
@@ -143,4 +144,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0787-cheapest-flights-within-k-stops](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0134-gas-station](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0134-gas-station/) | Medium |
 <!---LeetCode Topics End-->
