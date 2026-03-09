@@ -3,7 +3,7 @@
  * @param {number[]} cost
  * @return {number}
  */
-vvar canCompleteCircuit = function(gas, cost) {
+var canCompleteCircuit = function (gas, cost) {
     if (gas.reduce((a, b) => a + b, 0) < cost.reduce((a, b) => a + b, 0)) {
         return -1;
     }
@@ -19,5 +19,5 @@ vvar canCompleteCircuit = function(gas, cost) {
         }
     }
 
-    return start;    
+    return start;
 };
