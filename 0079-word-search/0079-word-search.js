@@ -7,9 +7,7 @@ var exist = function (board, word) {
     const row = board.length
     const col = board[0].length
 
-    const range = (x, y) => {
-        return 0 <= x && x < row && 0 <= y && y < col
-    }
+    const range = (x, y) => (0 <= x && x < row && 0 <= y && y < col)
 
     const search = (i, j, visited, depth) => {
         if (depth === word.length) {
@@ -42,6 +40,5 @@ var exist = function (board, word) {
             }
         }
     }
-
     return false
 }
