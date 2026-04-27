@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0036-valid-sudoku](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0036-valid-sudoku/) | Medium |
 | [0105-construct-binary-tree-from-preorder-and-inorder-traversal](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0105-construct-binary-tree-from-preorder-and-inorder-traversal) |
 | [0128-longest-consecutive-sequence](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0128-longest-consecutive-sequence) |
 | [0146-lru-cache](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0146-lru-cache) |
@@ -30,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0011-container-with-most-water/) | Medium |
 | [0033-search-in-rotated-sorted-array](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0033-search-in-rotated-sorted-array) |
+| [0036-valid-sudoku](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0036-valid-sudoku/) | Medium |
 | [0045-jump-game-ii](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0045-jump-game-ii/) | Medium |
 | [0053-maximum-subarray](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0053-maximum-subarray) |
 | [0056-merge-intervals](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0056-merge-intervals) |
@@ -127,6 +129,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0036-valid-sudoku](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0036-valid-sudoku/) | Medium |
 | [0079-word-search](https://github.com/hhheeeeee/alogirithm-solved/tree/main/0079-word-search/) | Medium |
 | [0200-number-of-islands](https://github.com/hhheeeeee/alogirithm-solved/tree/master/0200-number-of-islands) |
 ## Stack
